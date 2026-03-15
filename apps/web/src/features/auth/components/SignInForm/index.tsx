@@ -8,16 +8,31 @@ export function SignInForm({ onSubmit, isLoading, error }: SignInFormProps) {
     e.preventDefault()
     const form = e.currentTarget
     const email = (form.elements.namedItem('email') as HTMLInputElement).value
-    const password = (form.elements.namedItem('password') as HTMLInputElement).value
+    const password = (form.elements.namedItem('password') as HTMLInputElement)
+      .value
     onSubmit(email, password)
   }
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-      <Input name="email" label="E-mail" type="email" placeholder="seu@email.com" required />
-      <Input name="password" label="Senha" type="password" placeholder="••••••••" required />
+      <Input
+        name="email"
+        label="E-mail"
+        type="email"
+        placeholder="seu@email.com"
+        required
+      />
+      <Input
+        name="password"
+        label="Senha"
+        type="password"
+        placeholder="••••••••"
+        required
+      />
       {error && <span className="text-sm text-accent">{error}</span>}
-      <Button type="submit" isLoading={isLoading}>Entrar</Button>
+      <Button type="submit" isLoading={isLoading}>
+        Entrar
+      </Button>
     </form>
   )
 }

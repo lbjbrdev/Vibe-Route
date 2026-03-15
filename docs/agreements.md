@@ -42,6 +42,15 @@ This applies to both components and pages. The `hooks/` folder is optional for p
 ## 10. No Broken Files
 Never leave — or let Lucas leave — files with errors, broken imports, or invalid references at any point. Every file must be in a valid state after every change.
 
+## 17. Open PRs are Blockers
+Open PRs must be merged (feat → develop, then develop → main) before any new task or feature begins. Claude must enforce this — not just remind, but block any forward progress until all open PRs are closed.
+
+## 16. English Learning Format
+All communication from Claude must be in English, with a Portuguese translation right below each message. When there's a valuable observation — language nuances, idiomatic expressions, or technical terms with specific meanings in the dev world — add it as a note. Observations must be genuinely valuable, not basic concepts Lucas already knows as a senior dev. When Lucas writes in English, Claude must correct any mistakes and explain the error clearly.
+
+## 15. Language Standards
+Everything technical must be 100% in English: code, file names, commit messages, branch names, PR titles and descriptions. Portuguese is only for our communication and for text displayed to the end user on screen.
+
 ## 13. Git Branch Rules
 1. Before any implementation, Claude detects what will be done, presents a quick overview with the branch name and scope, waits for Lucas's confirmation, then creates and pushes the branch automatically.
 2. Never commit or push directly to `main`.
