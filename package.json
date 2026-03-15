@@ -1,0 +1,10 @@
+{
+  "name": "vibe-route",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "pnpm --filter @vibe-route/web dev",
+    "build": "pnpm --filter @vibe-route/web build",
+    "lint": "pnpm -r lint"
+  }
+}
