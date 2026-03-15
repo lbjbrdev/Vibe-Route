@@ -4,7 +4,8 @@
       "Bash(which pnpm:*)",
       "Bash(npm install:*)",
       "Bash(pnpm:*)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(cat:*)"
     ]
   }
 }
