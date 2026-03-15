@@ -5,7 +5,9 @@
       "Bash(npm install:*)",
       "Bash(pnpm:*)",
       "Bash(cd:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(gh:*)",
+      "Bash(brew install:*)"
     ]
   }
 }
